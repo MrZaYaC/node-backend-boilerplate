@@ -1,0 +1,27 @@
+{
+  "app": {
+    "host": "localhost",
+    "port": 8090,
+    "protocol": "http",
+    "defaultLanguage": "en"
+  },
+  "mongoose": {
+    "uri": "mongodb://localhost/example"
+  },
+  "facebook": {
+    "appId": "appId",
+    "appSecret": "secret"
+  },
+  "google": {
+    "clientId": "clientId",
+    "clientSecret": "secret"
+  },
+  "mailer": {
+    "protocol": "direct",
+    "auth": {
+      "user": "test@example.com",
+      "pass": "secret"
+    },
+    "defaultFromAddress": "First Last <test@examle.com>"
+  }
+}

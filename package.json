@@ -1,0 +1,42 @@
+{
+  "name": "node-backend-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate of backend REST API for angular-material-boilerplate",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "start": "forever start -a -l $PWD/log/forever.log -o $PWD/log/application.log -e $PWD/log/error.log app.js",
+    "stop": "forever stop app.js",
+    "debug": "node --debug app.js",
+    "test": "node node_modules/mocha/bin/mocha --timeout 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MrZaYaC/node-backend-boilerplate.git"
+  },
+  "author": "Denis Zaichenko <denis.zaichenko@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "crypto": "0.0.3",
+    "ejs": "^2.3.4",
+    "email-templates": "^2.0.1",
+    "express": "^4.13.3",
+    "express-boom": "^0.3.0",
+    "express-joi-validator": "^2.0.0",
+    "fb": "^0.7.0",
+    "geoip-lite": "^1.1.6",
+    "joi": "^6.6.1",
+    "less": "^2.5.3",
+    "mongoose": "^4.1.5",
+    "nconf": "^0.7.2",
+    "node-uuid": "^1.4.3",
+    "nodemailer": "^1.7.0",
+    "passport": "^0.3.0",
+    "passport-facebook-token": "^2.3.0",
+    "passport-google-plus-token": "^1.7.1",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "winston": "^1.0.1"
+  }
+}
